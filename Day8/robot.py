@@ -1,0 +1,17 @@
+class Solution(object):
+    def judgeCircle(self, moves):
+        x=0
+        y=0
+        for ch in moves:
+            if ch=="R":
+                x+=1
+            elif ch=="L":
+                x-=1
+            elif ch=="U":
+                y+=1
+            elif ch=="D":
+                y-=1
+        if x==0 and y==0:
+            return True
+        else:
+            return False
